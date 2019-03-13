@@ -37,7 +37,6 @@ module.exports = {
     "eol-last": 0,
     "no-console": 0,
     "spaced-comment": 1,
-    // "prefer-const": 1,
     "no-plusplus": 0,
     "indent": 0,
   }
