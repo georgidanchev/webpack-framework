@@ -1,48 +1,53 @@
 const path = require('path')
 const merge = require('webpack-merge')
-const OptimizeCssPlugin = require('optimize-css-assets-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
-const autoPrefixer = require('autoprefixer')
 const webpack = require('webpack')
-const common = require('./webpack.common')
+const autoPrefixer = require('autoprefixer')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const common = require('./webpack.config')
 
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'none',
   output: {
-    filename: '[name].[contentHash].bundle.js',
-    path: path.resolve(__dirname, 'dist_prod'),
+    filename: '[name].bundle.[contentHash].js',
+    path: path.resolve(__dirname, 'dist'),
   },
   optimization: {
     minimizer: [
-      new OptimizeCssPlugin(),
+      new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
-      new HtmlWebpackPlugin({
-        template: './src/index.html',
-        minify: {
-          removeRedundantAttributes: true,
-          collapseWhitespace: true,
-          removeComments: true,
-          useShortDoctype: true,
+      new HtmlWebpackPlugin(
+        {
+          template: './src/index.html',
+          minify: {
+            removeRedundantAttributes: true,
+            collapseWhitespace: true,
+            removeComments: true,
+            useShortDoctype: true,
+          },
         },
-      }),
+      ),
     ],
   },
   plugins: [
-  new MiniCssExtractPlugin({
-    filename: '[name].[contentHash].css',
-  }),
-  new webpack.LoaderOptionsPlugin({
-    options: {
-      postcss: [
-        autoPrefixer(),
-      ],
-    },
-  }),
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.[contentHash].css',
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          autoPrefixer(),
+        ],
+      },
+    }),
 
-],
+
+  ],
   module: {
     rules: [
       {

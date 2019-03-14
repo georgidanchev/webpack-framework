@@ -1,8 +1,8 @@
 {
   "name": "webpack_framework",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "description": "",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "Georgi Danchev",
   "license": "MIT",
-  "description": "",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",

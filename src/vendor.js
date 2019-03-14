@@ -1,2 +1,3 @@
-console.log('hello from vendor')
 require('@babel/polyfill')
+
+console.log('vendor script')

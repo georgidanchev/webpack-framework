@@ -1,17 +1,13 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
     vendor: './src/vendor.js',
     main: './src/main.js',
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-  ],
   module: {
     rules: [
       {
-        test: /\.html$/,
+        test: /\.html/,
         use: ['html-loader'],
       },
       {
