@@ -45,8 +45,6 @@ module.exports = merge(common, {
         ],
       },
     }),
-
-
   ],
   module: {
     rules: [

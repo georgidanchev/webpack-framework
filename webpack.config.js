@@ -1,4 +1,3 @@
-
 module.exports = {
   entry: {
     vendor: './src/vendor.js',
