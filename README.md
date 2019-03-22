@@ -44,6 +44,10 @@ Small summary of the setup
 
 You work under dev, once work is done and you are ready to push to your server or your git repo with a hook then use the build command which will build a production ready software with just one command.
 
+## ESLINT
+
+Run *npm --install-dev eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react* to install eslint, the impor plugin and the airbnb presets for JS, JSX and React. 
+
 ## NPM packages used
 * [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
 * [@babel/polyfill](https://www.npmjs.com/package/@babel/polyfill)
