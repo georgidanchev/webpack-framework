@@ -46,7 +46,7 @@ You work under dev, once work is done and you are ready to push to your server o
 
 ## ESLINT
 
-Run *npm -i -g eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react* to install eslint, the impor plugin and the airbnb presets for JS, JSX and React. 
+Run *npm i -g eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react* to install eslint, the impor plugin and the airbnb presets for JS, JSX and React. 
 
 ## NPM packages used
 * [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
