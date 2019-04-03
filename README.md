@@ -1,7 +1,8 @@
 # webpack framework
 
 
-Small summary of the setup
+// add small summary of the setup here
+
 <br/><br/>
 
 ## Features
