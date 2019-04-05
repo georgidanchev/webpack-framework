@@ -1,4 +1,4 @@
-# webpack-framework (setup)
+# webpack-framework
 
 This is the latest and greatest setup you can utilize in the web world -- webpack, all of the big websites use it! It can automate a lot of tasks meaningless but necessary tasks and save you a huge amount tons of time allowing you to focus on what matters!
 
@@ -6,7 +6,7 @@ This setup features two different development methods; production and developmen
 
 ## Workflow
 
-When you download the repo you have to run **npm install**  in the root folder of the project to download all of the latest npm packages. Then you will be ready to run the build-in hello world app. In the same terminal, run **npm run build**, this will build the hello world app and will populate the dist folder with all the necessary files. From there you can either view with by opening the **index.html** or by opening it with your live server plugin. This will be the finished product, in the development method we have our own live-server, but it's nice to see what you will get at the end. 
+When you download the repo you have to run **npm install** in the root folder of the project to download all of the latest npm packages. Then you will be ready to run the build-in hello world app. In the same terminal, run **npm run build**, this will build the hello world app and will populate the dist folder with all the necessary files. From there you can either view with by opening the **index.html** or by opening it with your live server plugin. This will be the finished product, in the development method we have our own live-server, but it's nice to see what you will get at the end. 
 
 To view the project in the development method, in that previous terminal, run **npm run dev** this will run the project within the webpack-live server. You will notice that there are no new assets in the dist folder, and that assets in the dist folder aren't modified as you work on them. This is because the live-server is configured to keep all the assets in memory by default, for better deficiency and speed of development.
 
@@ -18,7 +18,7 @@ This about covers everything that is most important for developing using this se
 
 ## Features
 
-### Production Mode - for best reliability
+### Production Mode - For Best Reliability
 * **HTML Minification** - removes spaces, comments for better performance.
 * **JS Minification** - removes spaces, comments for better performance.
 * **CSS Prefixing** - allows newer css properties to work on older browsers
@@ -29,7 +29,7 @@ This about covers everything that is most important for developing using this se
 * **Auto File Cleaning** - for no duplication in dist when you remove/modify files
 * **No Source Map** - no JS debugging => higher performance
 
-### Development Mode - best development performance
+### Development Mode - For Best Development Performance
 * **Webpack Live Server with auto open** - self-explanatory 
 * **Eval Source Map for JS Debugging** - allows you to see your exact code in the debugging dev tool of your browser including exact line numbers.
 * **No Babel Transpile** - For high refresh speed and code clarity.
@@ -47,6 +47,7 @@ This about covers everything that is most important for developing using this se
 * **npm install** - used to install all packages.
 * **npm run dev** - used to run development mode.
 * **npm run build** - used to run production mode.
+* **eslint --fix scripts/&#42;&#42;** - fix all simple eslint errors.
 
 
 ## ESLINT
@@ -75,5 +76,3 @@ Run **npm i -g eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-js
 * [sass-loader](https://www.npmjs.com/package/sass-loader)
 * [css-loader](https://www.npmjs.com/package/css-loader)
 * [normalize-scss](https://www.npmjs.com/package/normalize-scss)
-
-
