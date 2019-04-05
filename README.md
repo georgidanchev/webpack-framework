@@ -1,7 +1,5 @@
 # webpack-framework
 
-This is the latest and greatest setup you can utilize. It automates a lot of meaningless but necessary development tasks, saves you huge amounts of time and lets you focus on what really matters!
-
 This setup features two different development methods; production and development, each of these is highly optimized for their task. Production has all the bells and whistles you'd expect any good website development too to utilize like; magnification of all files, auto-prefixing, babel poly-fill and babel transpiling es6 to es5 for older browser, and much more!
 
 ## Workflow
