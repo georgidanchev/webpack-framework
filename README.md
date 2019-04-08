@@ -24,11 +24,11 @@ This about covers everything that is most important for developing using this se
 * **Babel Polyfill** - makes the new es6 function to work on older browsers.
 * **Assets Cache Busting**  - prevents website from loading outdated assets.
 * **Scripts Cache Busting** - prevents website from loading outdated scripts.
-* **Auto File Cleaning** - for no duplication in dist when you remove/modify files
-* **No Source Map** - no JS debugging => higher performance
+* **Auto File Cleaning** - for no duplication in dist when you remove/modify files.
+* **No Source Map** - no JS debugging => higher performance.
 
 ### Development Mode - For Best Development Performance
-* **Webpack Live Server with auto open** - self-explanatory 
+* **Webpack Live Server with auto open** - self-explanatory.
 * **Eval Source Map for JS Debugging** - allows you to see your exact code in the debugging dev tool of your browser including exact line numbers.
 * **No Babel Transpile** - For high refresh speed and code clarity.
 * **No Minification** - For high refresh speed and code clarity.
