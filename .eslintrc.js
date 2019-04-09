@@ -25,8 +25,7 @@ module.exports = {
       "single"
     ],
     "semi": [
-      "error",
-      "never"
+      "error"
     ],
     "import/no-extraneous-dependencies": 0,
     "lines-between-class-members": 1,
