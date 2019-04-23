@@ -1,3 +1,3 @@
-require('@babel/polyfill')
+require('@babel/polyfill');
 
-console.log('vendor script')
+console.log('vendor script');

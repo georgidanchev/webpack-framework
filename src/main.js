@@ -1,3 +1,6 @@
-import './styles/style.scss'
+import './styles/style.scss';
+import { cConsole } from './scripts/console';
 
-console.log('hello')
+console.log('Hello from main.js!');
+
+cConsole.log('Hello from console!');
