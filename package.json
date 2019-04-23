@@ -1,12 +1,19 @@
 {
-  "name": "webpack_framework",
-  "version": "1.0.3",
+  "name": "webpack-framework",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w3althambition/webpack-framework"
+  },
+  "bugs": {
+    "url": "https://github.com/w3althambition/webpack-framework/issues"
   },
   "keywords": [],
   "author": "Georgi Danchev",
